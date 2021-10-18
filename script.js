@@ -63,7 +63,7 @@ btnHold.addEventListener('click', function () {
     scores[activPlayer] += currentScore;
     document.querySelector(`#score--${activPlayer}`).textContent =
       scores[activPlayer];
-    if (scores[activPlayer] >= 20) {
+    if (scores[activPlayer] >= 100) {
       playing = false;
       diceElement.classList.add('hidden');
       document
@@ -77,7 +77,5 @@ btnHold.addEventListener('click', function () {
     }
   }
 });
-// New game functionlaty / Starting condition
-btnNew.addEventListener('click', function () {
-  intz();
-});
+// New game functionlity / Starting condition
+btnNew.addEventListener('click', intz);
